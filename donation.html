@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donation</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="donation-page" class="container hidden">
+        <button id="back-to-dashboard-donation" class="back-btn">Back</button>
+        <button id="logout-donation" class="logout-btn">Logout</button>
+        <h2>Donation Management</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Monthly Deficit</th>
+                    <th>Yearly Deficit</th>
+                    <th>Total Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="donation-list">
+                <!-- Donation items will be dynamically added here -->
+            </tbody>
+        </table>
+        <button id="add-item-btn">Add Item</button>
+        <button id="in-btn">In</button>
+        <button id="out-btn">Out</button>
+        <div id="add-donation" class="hidden">
+            <input type="text" id="new-item-name" placeholder="Item Name" required>
+            <input type="number" id="new-item-quantity" placeholder="Quantity" required>
+            <button id="save-donation-btn">Save</button>
+        </div>
+    </div>
+</body>
+</html>
